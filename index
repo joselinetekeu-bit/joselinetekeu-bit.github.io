@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Joseline Doriane Simo Tekeu | Academic Homepage</title>
+
+  <meta name="description"
+        content="Academic homepage of Joseline Doriane Simo Tekeu, PhD student in Applied Mathematics at TUBAF, Germany, working on Partial Differential Equations and mathematical modeling.">
+
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/">
+
+  <meta property="og:title"
+        content="Joseline Doriane Simo Tekeu | Academic Homepage">
+
+  <meta property="og:description"
+        content="Research profile, academic background, projects, experience and achievements of Joseline Doriane Simo Tekeu.">
+
+  <meta property="og:url"
+        content="https://YOUR-USERNAME.github.io/">
+
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #5f6368;
+      --line: #d8dde1;
+      --paper: #fbfaf7;
+      --surface: #ffffff;
+      --teal: #1f766f;
+      --brick: #b5533c;
+      --gold: #c48a21;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--brick);
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .site-name {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 48px;
+      align-items: center;
+      padding: 56px 0 44px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--brick);
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 0.98;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border: 1px solid var(--ink);
+      border-radius: 6px;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .portrait {
+      aspect-ratio: 4 / 5;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      display: block;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(32, 33, 36, 0.16);
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center 28%;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(240px, 0.28fr);
+      gap: 44px;
+      padding: 42px 0 56px;
+    }
+
+    section {
+      padding: 0 0 34px;
+    }
+
+    section + section {
+      border-top: 1px solid var(--line);
+      padding-top: 34px;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .paper-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .paper,
+    .entry {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 18px;
+    }
+
+    .paper h3,
+    .entry h3 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .paper p,
+    .entry p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .entry-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .meta {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #ffffff;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    aside {
+      border-left: 1px solid var(--line);
+      padding-left: 28px;
+    }
+
+    .info {
+      display: grid;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .info strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      padding: 24px 0 36px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .hero,
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        gap: 28px;
+        padding-top: 40px;
+      }
+
+      aside {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 28px 0 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="page" aria-label="Main navigation">
+
+    <p class="site-name">
+      Joseline Doriane Simo Tekeu
+    </p>
+
+    <div class="nav-links">
+      <a href="#profile">Profile</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+      <a href="CV_Joseline_Doriane_Simo_Tekeu.pdf">CV</a>
+    </div>
+
+  </nav>
+</header>
+
+
+<div class="page">
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div>
+
+      <p class="eyebrow">
+        PhD Student in Applied Mathematics
+      </p>
+
+      <h1>
+        Joseline Doriane Simo Tekeu
+      </h1>
+
+      <p class="intro">
+        PhD student in Applied Mathematics at the Technical University of
+        Freiberg (TUBAF), Germany, with a research focus on Partial
+        Differential Equations and mathematical modeling.
+      </p>
+
+      <div class="actions">
+
+        <a class="button"
+           href="CV_Joseline_Doriane_Simo_Tekeu.pdf">
+          Download CV
+        </a>
+
+        <a class="button secondary"
+           href="mailto:Joseline-Doriane.Simo-Tekeu@math.tu-freiberg.de">
+          Contact me
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="portrait">
+
+      <!-- Put your photo in the GitHub repository
+           and name it joseline-simo-tekeu.jpg -->
+
+      <img src="joseline-simo-tekeu.jpg"
+           alt="Portrait of Joseline Doriane Simo Tekeu">
+
+    </div>
+
+  </section>
+
+
+  <main>
+
+    <div>
+
+      <!-- PROFILE -->
+
+      <section id="profile">
+
+        <h2>Profile</h2>
+
+        <p>
+          I am a positive thinker and proactive problem solver with strong
+          analytical skills and a passion for Applied Mathematics, particularly
+          Partial Differential Equations. I am adaptable to changing
+          environments, thrive under pressure, and remain focused on achieving
+          my goals. I enjoy working in collaborative environments and
+          contributing to mathematical research and interdisciplinary projects.
+        </p>
+
+      </section>
+
+
+      <!-- RESEARCH -->
+
+      <section id="research">
+
+        <h2>Research Interests</h2>
+
+        <p>
+          My research interests are centered on Applied Mathematics,
+          Partial Differential Equations, mathematical modeling, and
+          interdisciplinary applications of mathematical methods.
+        </p>
+
+        <div class="tag-list">
+
+          <span class="tag">
+            Partial Differential Equations
+          </span>
+
+          <span class="tag">
+            Applied Mathematics
+          </span>
+
+          <span class="tag">
+            Mathematical Modeling
+          </span>
+
+          <span class="tag">
+            Mathematical Sciences
+          </span>
+
+          <span class="tag">
+            Differential Equations
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- PROJECTS -->
+
+      <section id="projects">
+
+        <h2>Research Projects</h2>
+
+        <div class="paper-list">
+
+          <article class="paper">
+
+            <h3>
+              Modeling Diseases with Delay Equations
+            </h3>
+
+            <p>
+              Mathematical modeling project investigating disease dynamics
+              using delay differential equations.
+            </p>
+
+          </article>
+
+
+          <article class="paper">
+
+            <h3>
+              Compartmental Mathematical Modeling of Bean Anthracnose
+              Under Climate Change
+            </h3>
+
+            <p>
+              Mathematical modeling project studying the dynamics of bean
+              anthracnose using a compartmental modeling approach and
+              considering the influence of climate change.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- EXPERIENCE -->
+
+      <section id="experience">
+
+        <h2>Experience</h2>
+
+        <div class="entry-list">
+
+          <article class="entry">
+
+            <h3>
+              Private Tutor in Mathematics
+            </h3>
+
+            <p>
+              Provided mathematics tutoring to high-school and university
+              students, supporting students in understanding mathematical
+              concepts and solving problems.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Dschang, Cameroon
+              </span>
+
+              <span>
+                2018 - 2023
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              Farm Productivity Team Member
+            </h3>
+
+            <p>
+              Collaborated with a team to maintain farm productivity and
+              contribute to agricultural activities supporting families.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Bandjoun, Cameroon
+              </span>
+
+              <span>
+                2018 - 2023
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              House Manager
+            </h3>
+
+            <p>
+              Managed household responsibilities including cleaning,
+              cooking, and childcare.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Yaoundé, Cameroon
+              </span>
+
+              <span>
+                2014 - 2018
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- EDUCATION -->
+
+      <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="entry-list">
+
+
+          <article class="entry">
+
+            <h3>
+              Technical University of Freiberg (TUBAF)
+            </h3>
+
+            <p>
+              PhD in Applied Mathematics, with a research focus on
+              Partial Differential Equations.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Germany
+              </span>
+
+              <span>
+                2025 - Present
+              </span>
+
+              <span>
+                Ongoing
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              University of Münster
+            </h3>
+
+            <p>
+              Research Visit in Applied Mathematics.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Germany
+              </span>
+
+              <span>
+                2024 - 2025
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              African Institute for Mathematical Sciences (AIMS)
+            </h3>
+
+            <p>
+              Structure Master's in Mathematical Sciences.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Rwanda
+              </span>
+
+              <span>
+                2023 - 2024
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              University of Dschang
+            </h3>
+
+            <p>
+              Master's Degree in Applied Mathematics.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Cameroon
+              </span>
+
+              <span>
+                2021 - 2023
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              University of Dschang
+            </h3>
+
+            <p>
+              Bachelor's Degree in Applied Mathematics.
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Cameroon
+              </span>
+
+              <span>
+                2018 - 2021
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- CERTIFICATES -->
+
+      <section id="certificates">
+
+        <h2>Certificates</h2>
+
+        <div class="entry-list">
+
+          <article class="entry">
+
+            <h3>
+              ICDL Certificate
+            </h3>
+
+            <div class="meta">
+
+              <span>
+                Rwanda
+              </span>
+
+              <span>
+                2024
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              PDEs and Randomness School / Conference
+            </h3>
+
+            <div class="meta">
+
+              <span>
+                Senegal
+              </span>
+
+              <span>
+                2024
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- AWARDS -->
+
+      <section id="awards">
+
+        <h2>Awards & Scholarships</h2>
+
+        <div class="entry-list">
+
+          <article class="entry">
+
+            <h3>
+              Young African Mathematician (YAM)
+            </h3>
+
+            <p>
+              Scholarship
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Germany
+              </span>
+
+              <span>
+                2024
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="entry">
+
+            <h3>
+              African Institute for Mathematical Sciences (AIMS)
+            </h3>
+
+            <p>
+              Scholarship
+            </p>
+
+            <div class="meta">
+
+              <span>
+                Rwanda
+              </span>
+
+              <span>
+                2023
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- SKILLS -->
+
+      <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="tag-list">
+
+          <span class="tag">
+            Applied Mathematics
+          </span>
+
+          <span class="tag">
+            Partial Differential Equations
+          </span>
+
+          <span class="tag">
+            Mathematical Modeling
+          </span>
+
+          <span class="tag">
+            Problem Solving
+          </span>
+
+          <span class="tag">
+            Analytical Skills
+          </span>
+
+          <span class="tag">
+            Teamwork
+          </span>
+
+          <span class="tag">
+            Adaptability
+          </span>
+
+          <span class="tag">
+            LaTeX
+          </span>
+
+          <span class="tag">
+            Python
+          </span>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- SIDEBAR -->
+
+    <aside id="contact" aria-label="Contact and academic information">
+
+      <div class="info">
+
+        <div>
+
+          <strong>Contact</strong>
+
+          <a href="mailto:Joseline-Doriane.Simo-Tekeu@math.tu-freiberg.de">
+            University Email
+          </a>
+
+          <br>
+
+          <a href="mailto:dorianesimotekeu@gmail.com">
+            Personal Email
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <strong>Academic Position</strong>
+
+          PhD Student in Applied Mathematics<br>
+          TUBAF, Germany
+
+        </div>
+
+
+        <div>
+
+          <strong>Research Focus</strong>
+
+          Partial Differential Equations<br>
+          Applied Mathematics<br>
+          Mathematical Modeling
+
+        </div>
+
+
+        <div>
+
+          <strong>Education</strong>
+
+          PhD in Applied Mathematics<br>
+          TUBAF, Germany
+
+        </div>
+
+
+        <div>
+
+          <strong>Awards</strong>
+
+          Young African Mathematician (YAM) Scholarship, 2024<br>
+          AIMS Scholarship, 2023
+
+        </div>
+
+
+        <div>
+
+          <strong>Languages</strong>
+
+          French<br>
+          English
+
+        </div>
+
+
+        <div>
+
+          <strong>Links</strong>
+
+          <a href="CV_Joseline_Doriane_Simo_Tekeu.pdf">
+            CV
+          </a>
+
+          <br>
+
+          <a href="https://github.com/YOUR-USERNAME">
+            GitHub
+          </a>
+
+          <br>
+
+          <a href="https://www.linkedin.com/">
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+
+  <footer>
+    Last updated August 2026.
+  </footer>
+
+</div>
+
+</body>
+</html>
