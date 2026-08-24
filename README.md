@@ -17,5 +17,5 @@ Required files:
 After GitHub Pages is enabled, the website will be available at:
 
 ```text
-Joseline Doriane Simo Tekeu
+https://joselinetekeu-bit.github.io/
 ```
