@@ -1,4 +1,4 @@
-# Joseline Tekeu Academic Website
+# Joseline Doriane Simo Tekeu
 
 Upload these files to a GitHub repository named:
 
