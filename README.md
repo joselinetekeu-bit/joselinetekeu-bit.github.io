@@ -1,22 +1,36 @@
 # Joseline Doriane Simo Tekeu
 
 Welcome to the professional website of **Joseline Doriane Simo Tekeu**
-Upload these files to a GitHub repository named:
 
-```text
-joselinetekeu-bit.github.io
+## Website 
 
-```
+After GitHub Pages is enabled, the website will be available at
 
-Required files:
-
-- `index.html`
-- `CV_Joseline_Doriane_Simo_Tekeu.pdf`
-- `joseline-simo-tekeu.jpg`
+**https://joselinetekeu-bit.github.io/**
 
 
-After GitHub Pages is enabled, the website will be available at:
+## Repository files
 
-```text
-https://joselinetekeu-bit.github.io/
-```
+Upload the following ing files to this repository
+
+- `index.html` - Main webpage of the professional website 
+- `CV_Joseline_Doriane_Simo_Tekeu.pdf` - Curriculum Vitae (CV)
+- `joseline-simo-tekeu.jpg` - Profile picture 
+
+
+## CV
+My CV is available here:
+[View my CV](CV_Joseline_Doriane_Simo_Tekeu.pdf)
+
+
+**Joseline Doriane Simo Tekeu** - Professional portfolio and personal website. 
+
+
+## Repository 
+ Github repository:
+
+https://github.com/joselinetekeu-bit/joselinetekeu-bit.github.io/
+
+
+
+
